@@ -66,6 +66,10 @@ module.exports.tests.current_schema = function(test, common) {
     // code intentionally commented to allow quick debugging of expected.json
     // common.diff(schemaCopy, fixture);
 
+    // code to write expected output to the fixture
+    //const fs = require('fs');
+    //fs.writeFileSync(path.resolve( __dirname + '/fixtures/expected.json' ), JSON.stringify(schemaCopy, null, 2));
+
     t.deepEqual(schemaCopy, fixture);
     t.end();
   });

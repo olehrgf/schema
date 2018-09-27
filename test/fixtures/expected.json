@@ -927,11 +927,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -1254,11 +1250,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -1581,11 +1573,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -1908,11 +1896,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -2235,11 +2219,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -2562,11 +2542,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -2889,11 +2865,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -3216,11 +3188,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -3543,11 +3511,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -3870,11 +3834,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -4197,11 +4157,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -4524,11 +4480,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -4851,11 +4803,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -5178,11 +5126,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",
@@ -5505,11 +5449,7 @@
           }
         },
         "center_point": {
-          "type": "geo_point",
-          "lat_lon": true,
-          "geohash": true,
-          "geohash_prefix": true,
-          "geohash_precision": 18
+          "type": "geo_point"
         },
         "shape": {
           "type": "geo_shape",

@@ -4,6 +4,8 @@ set -e
 # download and install elasticsearch with ICU plugin
 # note: the download servers and plugin install binary changed between versions
 
+sudo ls -R /var/lib/elasticsearch
+
 # default download and plugin locations
 ES_PLUGIN_BIN="/usr/share/elasticsearch/bin/elasticsearch-plugin"
 ES_DEB_URL="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ES_VERSION}.deb"
@@ -36,3 +38,5 @@ cat ~/pelias.json
 
 echo "--- elasticsearch.yml ---"
 sudo cat /etc/elasticsearch/elasticsearch.yml
+
+sudo ls -R /var/lib/elasticsearch

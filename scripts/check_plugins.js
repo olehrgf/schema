@@ -1,15 +1,15 @@
-var config = require('pelias-config').generate();
-var util = require('util');
-var es = require('elasticsearch');
-var client = new es.Client(config.esclient);
-var cli = require('./cli');
-var schema = require('../schema');
+const config = require('pelias-config').generate()
+const util = require('util')
+const es = require('elasticsearch')
+const client = new es.Client(config.esclient)
+const cli = require('./cli')
+const schema = require('../schema')
 
 // mandatory plugins
-var plugins = [ 'analysis-icu' ];
+const plugins = ['analysis-icu']
 
 // list of failures
-var failures = [];
+const failures = []
 
 cli.header("checking elasticsearch plugins");
 client.nodes.info( null, function( err, res ){
@@ -25,9 +25,9 @@ client.nodes.info( null, function( err, res ){
   }
 
   // iterate over all nodes in cluster
-  for( var uid in res.nodes ){
+  for(const uid in res.nodes ){
 
-    var node = res.nodes[uid];
+    const node = res.nodes[uid]
 
     // Amazon's hosted Elasticsearch does not have the plugins property
     // but has the plugins we need

@@ -33,10 +33,10 @@
   },
   "dependencies": {
     "colors": "^1.1.2",
-    "elasticsearch": "^15.0.0",
+    "elasticsearch": "^15.2.0",
     "joi": "^14.0.0",
     "lodash.merge": "^4.6.0",
-    "pelias-config": "^3.5.0"
+    "pelias-config": "^3.8.1"
   },
   "devDependencies": {
     "difflet": "^1.0.1",

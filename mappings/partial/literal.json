@@ -1,5 +1,4 @@
 {
-  "type": "string",
-  "index": "not_analyzed",
+  "type": "keyword",
   "doc_values": false
 }

@@ -4,9 +4,8 @@ const hash = require('./partial/hash');
 const multiplier = require('./partial/multiplier');
 const literal = require('./partial/literal');
 const literal_with_doc_values = require('./partial/literal_with_doc_values');
-const config = require('pelias-config').generate();
 
-var schema = {
+const schema = {
   properties: {
 
     // data partitioning
@@ -22,26 +21,25 @@ var schema = {
     // address data
     address_parts: {
       type: 'object',
-      dynamic: 'strict',
+      dynamic: true,
       properties: {
         name: {
-          type: 'string',
-          analyzer: 'keyword',
+          type: 'keyword'
         },
         unit: {
-          type: 'string',
+          type: 'text',
           analyzer: 'peliasUnit',
         },
         number: {
-          type: 'string',
+          type: 'text',
           analyzer: 'peliasHousenumber',
         },
         street: {
-          type: 'string',
+          type: 'text',
           analyzer: 'peliasStreet',
         },
         zip: {
-          type: 'string',
+          type: 'text',
           analyzer: 'peliasZip',
         }
       }
@@ -50,7 +48,7 @@ var schema = {
     // hierarchy
     parent: {
       type: 'object',
-      dynamic: 'strict',
+      dynamic: true,
       properties: {
         // https://github.com/whosonfirst/whosonfirst-placetypes#continent
         continent: admin,
@@ -145,33 +143,27 @@ var schema = {
       path_match: 'name.*',
       match_mapping_type: 'string',
       mapping: {
-        type: 'string',
-        analyzer: 'peliasIndexOneEdgeGram',
-        fielddata : {
-          format: "disabled"
-        }
+        type: 'text',
+        analyzer: 'peliasIndexOneEdgeGram'
       }
     },
-  },{
+  }, {
     phrase: {
       path_match: 'phrase.*',
       match_mapping_type: 'string',
       mapping: {
-        type: 'string',
-        analyzer: 'peliasPhrase',
-        fielddata : {
-          format: "disabled"
-        }
+        type: 'text',
+        analyzer: 'peliasPhrase'
       }
     }
   }],
   _source: {
-    excludes : ['shape','phrase']
+    excludes: ['shape', 'phrase']
   },
   _all: {
     enabled: false
   },
-  dynamic: 'strict'
+  dynamic: true
 };
 
 module.exports = schema;
